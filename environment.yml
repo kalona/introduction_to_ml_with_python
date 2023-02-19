@@ -2,7 +2,8 @@ name: python-ml
 dependencies:
   - numpy
   - scipy
-  - scikit-learn
+  - scikit-learn==1.1.3 # Due to restriction of some datasets from scikit-learn==1.2.0
+  - imbalanced-learn    # Due to restriction of some datasets from scikit-learn==1.2.0
   - matplotlib
   - pandas
   - pillow
